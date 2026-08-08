@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    image: home:v1
+    container_name: home-web
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
